@@ -4,6 +4,19 @@ import './App.css';
 
 class App extends Component {
   
+  constructor(props) {
+    super(props);
+    console.log('constructor');
+  }
+
+  componentWillMount() {
+    console.log('will mount');
+  }
+
+  componentDidMount() {
+    console.log('mounted');
+  }
+
   state = {
     toggle: true
   }
@@ -36,7 +49,7 @@ class App extends Component {
 class Welcome extends Component {
   render() {
     const { text, toggle } = this.props;
-    console.log(toggle);
+    console.log('render:  toggle:', toggle);
     return (
       <h1 className="App-title">{text}</h1>
     )

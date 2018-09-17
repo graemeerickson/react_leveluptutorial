@@ -32,8 +32,3 @@ class MoviesList extends Component {
 }
 
 export default MoviesList;
-
-
-const Test = () => (
-  <h1>TEST</h1>
-);

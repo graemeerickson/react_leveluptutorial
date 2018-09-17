@@ -8,15 +8,11 @@ export default class Movie extends Component {
     }),
   }
 
-  static defaultProps = {
-    desc: 'Description not available'
-  }
-
   render() {
     return (
       <div>
         <h3>{this.props.movie.title}</h3>
       </div>
-    )
+    );
   }
 }
